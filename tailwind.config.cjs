@@ -3,10 +3,16 @@ module.exports = {
   content: ["*.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      'lite-blue': '#daf1f4',
+      'lite-100': '#eceff6',
       'lite': '#eeeeee',
-      'dark': '#202020',
-      'lite-gray': '#707070',
+      'white': '#ffffff',
+      'dark': '#131023',
+      'gray': '#9fa9b3',
+      'blue': '#86b9f4',
+      'pink': '#f79dc4',
+      'purple': '#c4adf4',
+      'orange': '#f1ad87',
+      'green': '#abd3bc',
     },
     extend: {
       screens: {
