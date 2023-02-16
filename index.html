@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -49,8 +49,6 @@
           <span class="">profile setting</span>
         </div>
       </div>
-      <!--  -->
-      <div class=""></div>
       <!-- search bar -->
       <div class="my-3 py-1 px-2 w-full bg-lite-100 flex items-center rounded-lg">
         <button>
@@ -64,20 +62,77 @@
           class="w-full bg-lite-100 py-1 px-2 placeholder:text-gray placeholder:text-sm text-sm text-gray focus:outline-none">
       </div>
       <!-- add button -->
-      <div id="addBtn" class="bg-dark px-2 flex w-full items-center py-2 cursor-pointer rounded-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 text-lite mr-2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-        </svg>
-        <div class="flex justify-between w-full items-center">
-          <span class="text-sm text-lite">Add New Note</span>
-          <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-5 h-5 text-lite">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg></button>
+      <a href="">
+        <div id="addBtn" class="bg-dark px-5 flex w-full items-center py-2 cursor-pointer rounded-lg">
+          <div class="flex justify-between w-full items-center">
+            <span class="text-sm text-lite">Add New Note</span>
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-lite">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg></button>
+          </div>
+        </div>
+      </a>
+      <!-- sidebar links -->
+      <ul class="px-2">
+        <!-- YourNotes -->
+        <a href="YourNotes">
+          <li class="text-dark text-sm flex items-center py-2 my-2 px-1 hover:bg-lite-100 rounded-lg">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+              </svg></button>
+            <span class="px-2">My Notes</span>
+          </li>
+        </a>
+        <!-- notebooks -->
+        <a href="" id="Notebooks">
+          <li class="text-dark text-sm flex items-center py-2 my-2 px-1 hover:bg-lite-100 rounded-lg">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5  ">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+              </svg></button>
+            <span class="px-2">Notebooks</span>
+          </li>
+        </a>
+        <!-- Reminder -->
+        <a href="" id="Reminder">
+          <li class="text-dark text-sm flex items-center py-2 my-2 px-1 hover:bg-lite-100 rounded-lg">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg></button>
+            <span class="px-2">Reminder</span>
+          </li>
+        </a>
+        <!-- tags -->
+        <a href="" id="Tags">
+          <li class="text-dark text-sm flex items-center py-2 my-2 px-1 hover:bg-lite-100 rounded-lg">
+            <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+              </svg></button>
+            <span class="px-2">tags</span>
+          </li>
+        </a>
+      </ul>
+      <!-- logo -->
+      <div class="pt-10 pb-5">
+        <img src="/assets/images/logo.png" alt="" class="w-1/2 mx-auto">
+        <p class="text-sm pb-2 w-3/4 text-center mx-auto">
+          Set Business Account To Expelor Permium Features
+        </p>
+        <div class="flex justify-center">
+          <button id="upgrade" class="py-2 px-5 text-white bg-dark hover:border hover:bg-white hover:text-dark rounded-lg">Upgrade</button>
         </div>
       </div>
     </aside>
+    <!-- main -->
     <main class="col-span-9">
       <section class="bg-white w-full p-5 rounded-xl text-xl shadow">Your Notes</section>
       <section class="bg-white w-full p-5 rounded-xl text-xl my-5 shadow"></section>
