@@ -1,4 +1,4 @@
-import "/src/common/index.css"
+import '/src/common/index.css'
 
 // menu responsive
 const menuBtn = document.getElementById('menuBtn')
@@ -14,11 +14,39 @@ close.addEventListener('click', () => {
 
 // Unused buttons
 const reminder = document.querySelectorAll('#Reminder')
-reminder.onclick = function(){
+reminder.onclick = function () {
     alert('There is no application for this button yet')
 }
 
 const tags = document.querySelectorAll('#Tags')
-tags.onclick = function(){
+tags.onclick = function () {
     alert('There is no application for this button yet')
 }
+
+// output box
+var titleElement = document.querySelector('#inputNoteTitel')
+titleElement.addEventListener('keydown', function (ev) {
+    var titlevalue = ev.target.value;
+    document.querySelector('#outputTitle').innerText = titlevalue
+})
+
+var discriptionElement = document.querySelector('#inputNoteDiscription')
+discriptionElement.addEventListener('keydown', function (ev) {
+    var discriptionvalue = ev.target.value;
+    document.querySelector('#outputDescription').innerText = discriptionvalue
+})
+
+var dateElement = document.querySelector('#inputNoteDate')
+dateElement.addEventListener('keydown', function (ev) {
+    var datevalue = ev.target.value;
+    document.querySelector('#outputDate').innerText = datevalue
+})
+
+var prioityElement = document.querySelector('#inputNotePrioity')
+prioityElement.addEventListener('keydown', function (ev) {
+    var prioityvalue = ev.target.value;
+    document.querySelector('#outputPrioity').innerText = prioityvalue
+})
+
+
+
