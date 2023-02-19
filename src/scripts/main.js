@@ -48,5 +48,20 @@ prioityElement.addEventListener('keydown', function (ev) {
     document.querySelector('#outputPrioity').innerText = prioityvalue
 })
 
+// form buttons
+// note
+const addToDoBtn = document.getElementById('addToDoBtn')
+const addToDoForm = document.getElementById('addToDoForm')
+const addNoteBtn = document.getElementById('addNoteBtn')
+const addNoteForm = document.getElementById('addNoteForm')
 
+addNoteBtn.addEventListener('click', () => {
+    addToDoForm.classList.add('hidden')
+    addNoteForm.classList.remove('hidden')
+})
 
+// to do
+addToDoBtn.addEventListener('click', () => {
+    addNoteForm.classList.add('hidden')
+    addToDoForm.classList.remove('hidden')
+})
