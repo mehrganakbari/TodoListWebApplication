@@ -21,7 +21,7 @@ module.exports = {
         'sm': '568px',
         'md': '640px',
         'lg': '768px',
-        'lg2': '920px',
+        'lg2': '920 px',
         'xl': '1024px',
         '2xl': '1280px',
         '3xl': '1536px',
@@ -30,5 +30,6 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('@tailwindcss/custom-forms'),
   ],
 };
